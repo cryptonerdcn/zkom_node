@@ -21,7 +21,7 @@ But if you want to build it, you can use the following command:
 scarb riscv build
 ```
 
-### Running `cairo_server`
+### Run `cairo_server`
 
 To run the `cairo_server`, use the following command:
 
@@ -30,11 +30,13 @@ cd cairo_server
 cargo run
 ```
 
-This project are using `scarb-riscv` and `riscairo` project (<https://github.com/massalabs/riscairo>).
+This project is using:
+- `scarb-riscv` and `riscairo` (<https://github.com/massalabs/riscairo>).
+- `WASM-Cairo` (<https://github.com/cryptonerdcn/wasm-cairo>).
 
-TASKS
+## TASKS:
 
-- [*] Using Cairo to compute the dot product for the KYC.
+- [x] Using Cairo to compute the dot product for the KYC.
 - [ ] Using WASM-Cairo to run Cairo code in the Browser.
 - [ ] Generate the proof.
 - [ ] Verifier.
