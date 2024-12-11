@@ -38,7 +38,7 @@ This project is using:
 
 You need to run `cairo_server` first, then run the frontend.
 
-For more information, please refer to the [Frontend README](Frontend/README.md).
+For more information, please refer to the [Frontend/README.md](https://github.com/YanYuanFE/zcalk-web/blob/master/README.md)).
 
 ## TASKS:
 
