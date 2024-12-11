@@ -34,6 +34,12 @@ This project is using:
 - `scarb-riscv` and `riscairo` (<https://github.com/massalabs/riscairo>).
 - `WASM-Cairo` (<https://github.com/cryptonerdcn/wasm-cairo>).
 
+### Run Frontend
+
+You need to run `cairo_server` first, then run the frontend.
+
+For more information, please refer to the [Frontend README](Frontend/README.md).
+
 ## TASKS:
 
 - [x] Using Cairo to compute the dot product for the KYC.
