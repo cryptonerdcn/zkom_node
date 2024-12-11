@@ -1,4 +1,5 @@
 use actix_web::{web, App, HttpServer, HttpResponse};
+use actix_cors::Cors;
 use serde::{Deserialize, Serialize};
 use std::process::Command;
 use std::fs;
@@ -75,7 +76,14 @@ fn parse_output(output: &str) -> Option<Vec<i32>> {
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
+        let cors = Cors::default()
+            .allow_any_origin()
+            .allow_any_method()
+            .allow_any_header()
+            .max_age(3600);
+
         App::new()
+            .wrap(cors)
             .route("/run", web::post().to(update_and_run))
     })
     .bind("127.0.0.1:8080")?
